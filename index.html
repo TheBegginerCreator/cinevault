@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineVault — Ваш кинотеатр</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header>
+    <div class="logo">Cine<span>Vault</span></div>
+    <nav>
+      <a href="#movies">Фильмы</a>
+      <a href="#about">О нас</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакт</a>
+    </nav>
+    <button class="theme-btn" id="themeToggle" title="Переключить тему" aria-label="Переключить тему"></button>
+  </header>
+
+  <main>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-tag">Добро пожаловать в CineVault</div>
+        <h1>Мир кино —<br/>в одном <em>месте</em></h1>
+        <p class="hero-desc">
+          Лучшие фильмы, рецензии критиков и расписание сеансов.
+          Откройте для себя новые истории каждый день.
+        </p>
+        <a href="#movies" class="hero-cta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"/>
+            <polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/>
+          </svg>
+          Смотреть каталог
+        </a>
+        <div class="hero-stats">
+          <div><div class="stat-num">1 200+</div><div class="stat-label">Фильмов</div></div>
+          <div><div class="stat-num">4.8★</div><div class="stat-label">Средний рейтинг</div></div>
+          <div><div class="stat-num">50К+</div><div class="stat-label">Зрителей</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАТАЛОГ ФИЛЬМОВ -->
+    <section id="movies">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Популярные фильмы</h2>
+          <p class="section-sub">Подборка лучших картин этого сезона по версии наших зрителей</p>
+        </div>
+      </div>
+      <div class="movies-grid" id="moviesGrid"></div>
+      <div class="show-more-wrap">
+        <button class="show-more-btn" id="showMoreBtn">Показать ещё</button>
+      </div>
+    </section>
+
+    <!-- О ПРОЕКТЕ -->
+    <section id="about">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Почему CineVault?</h2>
+          <p class="section-sub">Мы создали место, где кино — больше, чем просмотр</p>
+        </div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎬</div>
+          <h3>Огромный каталог</h3>
+          <p>Более 1 200 фильмов всех жанров — от классики до новинок 2025 года.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⭐</div>
+          <h3>Честные рецензии</h3>
+          <p>Только реальные отзывы от живых зрителей. Без накруток и ботов.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌙</div>
+          <h3>Тёмная тема</h3>
+          <p>Переключайтесь между светлой и тёмной темой — ваш выбор сохраняется.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Адаптивный дизайн</h3>
+          <p>Удобный просмотр на любом устройстве: смартфон, планшет, ПК.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section id="reviews">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Отзывы зрителей</h2>
+          <p class="section-sub">Что говорят наши пользователи</p>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Лучший сайт о кино! Нашёл все фильмы, которые искал годами. Интерфейс удобный и красивый.»</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">АМ</div>
+            <div>
+              <div class="reviewer-name">Алексей М.</div>
+              <div class="reviewer-sub">Постоянный зритель</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">«Обожаю тёмную тему — смотрю поздно вечером и глаза не устают. Каталог огромный!»</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">СК</div>
+            <div>
+              <div class="reviewer-name">Светлана К.</div>
+              <div class="reviewer-sub">Киноман</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">«Рецензии очень помогают выбрать, что посмотреть в выходные. Советую всем друзьям!»</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">ДП</div>
+            <div>
+              <div class="reviewer-name">Дмитрий П.</div>
+              <div class="reviewer-sub">Новый пользователь</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+    <section id="contact">
+      <div class="contact-text">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <p>Есть вопросы, предложения или хотите добавить фильм в каталог? Напишите нам — ответим в течение 24 часов.</p>
+        <div class="contact-info">
+          <div>📧 hello@cinevault.ru</div>
+          <div>📞 +7 (900) 123-45-67</div>
+          <div>📍 Москва, ул. Кинематографическая, 1</div>
+        </div>
+      </div>
+      <form id="contactForm" novalidate>
+        <div class="input-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" placeholder="Иван Иванов" />
+          <span class="err-msg" id="nameErr"></span>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="ivan@example.com" />
+          <span class="err-msg" id="emailErr"></span>
+        </div>
+        <div class="input-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" placeholder="Напишите ваш вопрос или предложение..."></textarea>
+          <span class="err-msg" id="messageErr"></span>
+        </div>
+        <button type="submit" class="submit-btn">Отправить</button>
+        <div class="form-success" id="formSuccess">
+          ✅ Сообщение отправлено! Мы ответим вам в ближайшее время.
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="logo">Cine<span>Vault</span></div>
+      <div class="footer-socials">
+        <a class="social-link" href="#" title="VK">VK</a>
+        <a class="social-link" href="#" title="Telegram">TG</a>
+        <a class="social-link" href="#" title="YouTube">YT</a>
+      </div>
+      <p class="footer-copy">© 2025 CineVault. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- МОДАЛЬНОЕ ОКНО -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть">✕</button>
+      <div class="modal-inner">
+        <div class="modal-poster">
+          <img id="modalPoster" src="" alt="" />
+        </div>
+        <div class="modal-info">
+          <div class="modal-genre" id="modalGenre"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <div class="modal-meta">
+            <span id="modalYear"></span>
+            <span class="modal-rating" id="modalRating"></span>
+          </div>
+          <p class="modal-desc" id="modalDesc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
